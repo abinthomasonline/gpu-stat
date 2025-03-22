@@ -1,0 +1,24 @@
+# GPU-Stat Configuration
+# Define your remote servers here
+
+servers:
+  - name: rtx-4090
+    host: 123.123.12.123
+    user: root
+    key_path: ~/.ssh/id_ed25519      # Path to SSH private key
+    interval: 5  # seconds between stat collections
+    port: 12345     # SSH port
+
+  # You can add multiple servers
+  # - name: another-server
+  #   host: another.domain.com
+  #   user: username
+  #   key_path: ~/.ssh/id_ed25519
+  #   interval: 10
+  #   port: 2222
+
+# Global settings
+settings:
+  default_interval: 5  # default interval in seconds
+  data_dir: ./data     # directory to store data
+   
