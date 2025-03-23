@@ -164,3 +164,6 @@ cython_debug/
 
 # Default Data directory
 data/*
+
+# Config file
+config.yaml
