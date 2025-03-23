@@ -28,10 +28,15 @@ GPU Stat Monitor is a Python-based tool that:
 ## Installation
 
 ```bash
-# clone and install
+# install from git url
+pip install git+https://github.com/abinthomasonline/gpu-stat.git
+```
+
+```bash
+# or clone and install
 git clone https://github.com/abinthomasonline/gpu-stat.git
 cd gpu-stat
-pip install -e .
+pip install .
 ```
 
 ## Usage
