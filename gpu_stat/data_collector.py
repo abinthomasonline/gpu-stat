@@ -127,7 +127,7 @@ class GPUDataCollector:
                         "temperature": float(temp),
                         "power_draw": float(power_draw),
                         "power_limit": float(power_limit),
-                        "fan_speed": float(fan) if fan else 0,
+                        "fan_speed": float(fan) if fan and fan != "[N/A]" else 0,
                         "processes": [],
                     }
                     gpus.append(gpu_data)
